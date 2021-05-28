@@ -63,11 +63,11 @@ a:active {
 
 
 
-/*This is the slideshow/carousel*/
+/*slideshow/carousel stuff*/
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
+/* slideshow container */
 .slideshow-container {
   width: 100%;
   position: relative;
@@ -84,7 +84,7 @@ iframe {
 }
 
 
-/* Hide the images by default */
+/* hide vids by default */
 .mySlides {
   display: none;
 }
@@ -104,7 +104,7 @@ iframe {
   color: #3c345c;
 }
 
-/* Next & previous buttons */
+/* previous and next buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -120,32 +120,24 @@ iframe {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* put the "next button" on the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-/* Position the "previous button" to the left */
+/* put the "previous button" on the left */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* on hover, add a translucent black background color */
 .prev:hover, .next:hover {
   background-color: rgba(60,52,92,0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
-/* The dots/bullets/indicators */
+/* dot indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -161,7 +153,7 @@ iframe {
   background-color: #3c345c;
 }
 
-/* Fading animation */
+/* fade animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2.5s;
