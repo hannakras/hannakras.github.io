@@ -81,7 +81,7 @@ html {
   color: #fff;
 }
 .feature-square {
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url(images/videos.gif);
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url(/videos.gif);
   color: #fff;
   display: flex;
   flex-direction: column;
