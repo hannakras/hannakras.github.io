@@ -81,18 +81,18 @@ html {
   color: #fff;
 }
 .feature-square {
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url(videos.gif);
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),url(images/videos.gif);
   color: #fff;
   display: flex;
   flex-direction: column;
 }
 .rect-top {
-  background-image: url(writings.png);
+  background-image: url(images/writings.png);
   color: #fff;
   background-position: center;
 }
 .rect-bottom {
-  background-image: url(designs.png);
+  background-image: url(images/designs.png);
   color: #fff;
   background-position: center;
 }
