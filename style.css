@@ -2,6 +2,9 @@ html {
   font-size: 16px;
   font-family: Verdana, Helvetica, monospace;
 }
+html, body {
+  overflow-x:hidden;
+}
 /*tooltips*/
 .tooltip {
   position: relative;
@@ -13,7 +16,7 @@ html {
   width: 240px;
   background-color: #3c345c;
   color: #fff;
-  text-align: ju;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 5px 5px 10px;
   /* Position the tooltip */
@@ -40,16 +43,16 @@ html {
 }
 /*End tooltips*/
 /* Home page */
-.wrapper h3 {
+.header-wrapper h3 {
   margin: 0;
 }
-.wrapper h3+p {
+.header-wrapper h3+p {
   margin-top: 0;
 }
-.wrapper p {
+.header-wrapper p {
   line-height: 25px;
 }
-.wrapper {
+.header-wrapper {
   width: 100%;
   /*max-width: 1200px;*/
   margin: 20px auto;
@@ -126,10 +129,35 @@ html {
 }
 /* End Home page */
 /* About page */
+.about-wrapper p {
+  line-height: 25px;
+}
+.about-wrapper {
+  width: 80%;
+  /*max-width: 1200px;*/
+  margin: 20px auto;
+  background-color: #fff;
+  display: grid;
+}
+.imgHanna {
+  border-radius: 200px;
+  display: block;
+  float: right;
+  margin: 50px 50px 0 0;
+  border: 5px solid #920075;
+}
 .about {
   display: grid;
-  grid-gap: 1px;
-  grid-auto-rows: minmax(150px, auto);
+  grid-template-columns: 40% 60%;
+}
+.about-photo {
+  grid-column: 1;
+  float: left;
+}
+.about-copy {
+  grid-column: 2;
+  text-align: left;
+  margin: 20px 0 0 0;
 }
 .strengthsTitles {
   color: #920075;
@@ -142,7 +170,6 @@ html {
   padding: 3px;
   margin-bottom: 4px;
 }
-
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -150,6 +177,7 @@ html {
 .up {
   transform: rotate(-135deg);
 }
+
 #strengths a {
   color: #920075;
   text-decoration: none;
@@ -159,16 +187,16 @@ html {
   text-decoration: none;
   font-weight: bold;
 }
+@media (min-width: 768px) {
+  .strengths-desktop {
+    background-color: rgba(58, 153, 168, 0.8);
+    text-align: left;
+    display: grid;
+    grid: repeat(3, max-content) / 20em auto 20em;
+  }
+}
 @media (min-width: 500px) {
-  .about {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-photo {
-    grid-column: 1;
-  }
-  .about-copy {
-    grid-column: 2;
-  }
+
 }
 /* End About page */
 /* About Timeline */
@@ -214,12 +242,6 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.imgHanna {
-  border-radius: 200px;
-  display: block;
-  float: right;
-  margin-right: 100px;
 }
 .title a:link, a:visited {
   color: #3c345c;
